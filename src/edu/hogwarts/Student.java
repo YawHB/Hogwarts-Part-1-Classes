@@ -19,6 +19,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" + "enrollmentYear=" + enrollmentYear + ", graduationYear=" + graduationYear + ", graduated=" + graduated + '}';
+        return  "enrollmentYear=" + enrollmentYear + ", graduationYear=" + graduationYear + ", graduated=" + graduated + '\n';
     }
 }

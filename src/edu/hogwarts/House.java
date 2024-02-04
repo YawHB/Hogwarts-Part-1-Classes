@@ -20,10 +20,10 @@ public class House {
 
     @Override
     public String toString() {
-        return "House{" +
-                "name='" + name + '\'' +
-                ", founder='" + founder + '\'' +
-                ", colors=" + Arrays.toString(colors) +
+        return
+                "name: '" + name + '\'' +
+                ", founder: '" + founder + '\'' +
+                ", colors: " + Arrays.toString(colors) +
                 '}';
     }
 }

@@ -104,8 +104,8 @@ import java.util.Arrays;
 
         @Override
         public String toString() {
-            return "DynamicArray{" +
-                    "array=" + Arrays.toString(array) +
+            return "DynamicArray: "
+                     + Arrays.toString(array) +
                     "\nsize " + size +
                     '}';
         }

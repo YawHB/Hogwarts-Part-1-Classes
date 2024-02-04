@@ -26,7 +26,7 @@ public class HogwartsStudent extends Student {
 
     @Override
     public String toString() {
-        return "HogwartsStudent{" +
+        return
                 "house='" + house + '\'' +
                 ", prefect=" + prefect +
                 ", teams=" + Arrays.toString(teams) +
