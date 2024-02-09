@@ -1,4 +1,6 @@
-package edu.hogwarts;
+package edu.hogwarts.data;
+
+import edu.generic.Teacher;
 
 import java.util.Date;
 
@@ -17,13 +19,6 @@ public class HogwartsTeacher extends Teacher {
 
   }
 
-
-
-    /* public HogwartsTeacher(Date employmentStart, Date employmentEnd, House house, boolean headOfHouse) {
-        super(employment, employmentStart, employmentEnd);
-        this.house = house;
-        this.headOfHouse = headOfHouse;
-    }*/
 
     @Override
     public String toString() {
