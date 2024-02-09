@@ -1,6 +1,6 @@
 package edu.generic;
 
-public class Student {
+public class Student extends Person {
 
     private int enrollmentYear;
     private int graduationYear;
@@ -10,6 +10,8 @@ public class Student {
     public Student() {
 
     }
+
+
 
     public Student(int enrollmentYear, int graduationYear, boolean graduated) {
         this.enrollmentYear = enrollmentYear;

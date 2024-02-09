@@ -13,6 +13,8 @@ public class Teacher extends Person {
     public Teacher() {
     }
 
+
+
   public Teacher(String firstName, String lastName, String middleName, String employment, Date employmentStart, Date employmentEnd){
         super(firstName, lastName, middleName);
         this.employment = employment;
