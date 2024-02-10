@@ -3,11 +3,10 @@ package edu.hogwarts.controllers;
 import edu.generic.Student;
 import edu.hogwarts.data.HogwartsStudent;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class StudentController {
+
     private int lastID = 1;
     private final Map<Integer, HogwartsStudent> studentMap = new HashMap();
 
@@ -18,7 +17,9 @@ public class StudentController {
         studentMap.put(lastID, hwStudent);
 
         this.lastID++;
+
     }
+
 
     public Student getStudent(int id) {
         return studentMap.get(id);
@@ -26,6 +27,17 @@ public class StudentController {
 
     public List<HogwartsStudent> getAllStudents() {
         return studentMap.values().stream().toList();
+
+    }
+
+    public List<HogwartsStudent> getAllStudentsSorted(Comparator<HogwartsStudent> sortBy) {
+        List list = new ArrayList<>(studentMap.values());
+        list.sort(sortBy);
+        return list;
+
+    } public Boolean getAllStudentsSorted(boolean bool) {
+        return true;
+
     }
 
     public void updateStudent(int id, HogwartsStudent newStudent) {

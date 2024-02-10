@@ -2,9 +2,9 @@ package edu.generic;
 
 public class Student extends Person {
 
-    private int enrollmentYear;
-    private int graduationYear;
-    private boolean graduated;
+    protected int enrollmentYear;
+    protected int graduationYear;
+    protected boolean graduated;
 
 
     public Student() {
@@ -13,7 +13,8 @@ public class Student extends Person {
 
 
 
-    public Student(int enrollmentYear, int graduationYear, boolean graduated) {
+    public Student(String firstName, String lastName, String middleName, int enrollmentYear, int graduationYear, boolean graduated) {
+        super( firstName, lastName, middleName);
         this.enrollmentYear = enrollmentYear;
         this.graduationYear = graduationYear;
         this.graduated = graduated;
@@ -21,6 +22,10 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return  "enrollmentYear=" + enrollmentYear + ", graduationYear=" + graduationYear + ", graduated=" + graduated + '\n';
+        return   super.toString() +
+                " enrollmentYear " + enrollmentYear +
+                ", graduationYear " + graduationYear +
+                ", graduated " + graduated + " || "
+                 ;
     }
 }
